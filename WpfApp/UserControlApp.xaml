@@ -1,0 +1,308 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp.MyControls" x:Class="WpfApp.MyControls.UserControlApp" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <GridSplitter Grid.Column="1"  Grid.Row="0" ShowsPreview="False" Width="3" 
+			HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+        <GridSplitter Grid.Column="1" Grid.RowSpan="3" Height="3" 
+			HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+
+        <Canvas Grid.Row="0" Grid.RowSpan="3" x:Name="Can1" Grid.ColumnSpan="2" Margin="3,10,0,-10" >
+
+            <CheckBox x:Name="ChBox1" Canvas.Left="104" Canvas.Top="243" 
+				Template="{DynamicResource ChBoxTemplate}"
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked" 
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus" Command="{Binding MyCommand}">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox2" Canvas.Left="104" Canvas.Top="261" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox3" Canvas.Left="112" Canvas.Top="279" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox4" Canvas.Left="116" Canvas.Top="298" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox5" Canvas.Left="124" Canvas.Top="316" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox6" Canvas.Left="142" Canvas.Top="329" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox7" Canvas.Left="158" Canvas.Top="341" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox8" Canvas.Left="176" Canvas.Top="347" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox9" Canvas.Left="194" Canvas.Top="347" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox10" Canvas.Left="212" Canvas.Top="341" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox11" Canvas.Left="230" Canvas.Top="329" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox12" Canvas.Left="248" Canvas.Top="316" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox13" Canvas.Left="257" Canvas.Top="299" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox14" Canvas.Left="262" Canvas.Top="278"  
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox15" Canvas.Left="269" Canvas.Top="261" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox16" Canvas.Left="269" Canvas.Top="243" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox32" Canvas.Left="104" Canvas.Top="204" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox31" Canvas.Left="104" Canvas.Top="186" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox30" Canvas.Left="112" Canvas.Top="168" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox29" Canvas.Left="116" Canvas.Top="150" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox28" Canvas.Left="124" Canvas.Top="132" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox27" Canvas.Left="142" Canvas.Top="119" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox26" Canvas.Left="158" Canvas.Top="108" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox25" Canvas.Left="176" Canvas.Top="103" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox24" Canvas.Left="194" Canvas.Top="103" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox23" Canvas.Left="212" Canvas.Top="108" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox22" Canvas.Left="230" Canvas.Top="119" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox21" Canvas.Left="248" Canvas.Top="132" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox20" Canvas.Left="257" Canvas.Top="150" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox19" Canvas.Left="262" Canvas.Top="168" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus"/>
+            <CheckBox x:Name="ChBox18" Canvas.Left="269" Canvas.Top="186" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <CheckBox x:Name="ChBox17" Canvas.Left="269" Canvas.Top="204" 
+				Template="{DynamicResource ChBoxTemplate}" 
+				FocusVisualStyle="{DynamicResource FocusStyle}" Checked="ChBox_Checked" Unchecked="ChBox_Unchecked"
+				Background="Gray" GotFocus="ChBox_GotFocus" LostFocus="ChBox_LostFocus">
+                <CheckBox.InputBindings>
+                    <MouseBinding Gesture="Shift+LeftClick" Command="New"/>
+                </CheckBox.InputBindings>
+            </CheckBox>
+            <Label Content="Model" Canvas.Left="173" Canvas.Top="10" FontSize="14"/>
+        </Canvas>
+        <Canvas Grid.Column="2" x:Name="Can2" >
+            <Button x:Name="Create" Width="120" Height="30" Canvas.Left="53" Canvas.Top="129" RenderTransformOrigin="0.492,0.933" 
+				Content="Create" Click="Create_Click" />
+            <ComboBox x:Name="ComBox1" Canvas.Left="53" Canvas.Top="78" Width="120" VerticalAlignment="Center">
+                <TextBlock><Run Text="Коронка"/></TextBlock>
+                <TextBlock><Run Text="Мост"/></TextBlock>
+                <TextBlock><Run Text="Имплант"/></TextBlock>
+                <TextBlock><Run Text="Чистка каналов"/></TextBlock>
+                <TextBlock><Run Text="Удаление"/></TextBlock>
+            </ComboBox>
+            <Label Content="Create new group." Canvas.Left="53" Canvas.Top="25" Width="120" FontSize="14" />
+        </Canvas>
+        <Canvas Grid.Column="2" Grid.Row="2" x:Name="Can3" >
+            <Button x:Name="BtnUpdate" Content="Update" Width="100" Height="30" Canvas.Left="10" Canvas.Top="134" Click="BtnUpdate_Click"  />
+            <ComboBox x:Name="ComBox2" Canvas.Left="58" Canvas.Top="47" Width="120" InputScope="{Binding Groups/Id, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:UserControlApp}}}" SelectionChanged="ComBox2_SelectionChanged"/>
+            <Button x:Name="Delete" Content="Delete" Width="100" Height="30" Canvas.Left="122" Canvas.Top="134" Click="Delete_Click" />
+            <ComboBox x:Name="ComBox3" Canvas.Left="58" Canvas.Top="93" Width="120">
+                <TextBlock><Run Text="Коронка"/></TextBlock>
+                <TextBlock><Run Text="Мост"/></TextBlock>
+                <TextBlock><Run Text="Имплант"/></TextBlock>
+                <TextBlock><Run Text="Чистка каналов"/></TextBlock>
+                <TextBlock><Run Text="Удаление"/></TextBlock>
+            </ComboBox>
+            <Label Content="Editor" Canvas.Left="95" Canvas.Top="10" FontSize="14"/>
+        </Canvas>
+    </Grid>
+</UserControl>
